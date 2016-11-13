@@ -1,0 +1,539 @@
+html,
+body {
+	width: 1200px;
+	height: 100%;
+	margin: auto;
+	padding: 0;
+}
+* {
+	box-sizing: border-box;
+}
+
+/*Header container*/
+.homePage {
+	width: 100%;
+	height: 100%;
+	background: #aa61f3 url("../img/sky.jpg") no-repeat;
+	background-size: 100% 100%;
+}
+header {
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+/*nav {
+	height: 5%;
+    position: fixed;
+    width: 1200px;
+    background-color: #ccc9c9;
+    opacity: .5;
+    z-index: 999;
+}*/
+
+nav i {
+	width: 10%;
+	position: fixed;
+	color: #9E9E9E;
+	margin: 1%;
+	z-index: 1;
+}
+.vertNavbar {
+	display: none;
+	margin: 0 auto;
+	padding: 0;
+	background: #8799a7;
+	text-align: center;
+	border-radius: 2%;
+}
+.homePage a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-style: italic;
+	font-size: 0.5em;
+	color: #ffffff;
+}
+nav:hover .vertNavbar {
+	display: block;
+	color: #ffffff;
+}			
+.vertNavbar li {
+	padding: 1em;
+	box-shadow: 1px 1px #7c8d9e;
+	opacity: .7;
+	cursor: pointer;
+}
+.vertNavbar li:hover {
+	background: #7c8d9e;
+	opacity: 1;
+}
+
+/*for every li of page*/
+li {
+	list-style: none;
+	letter-spacing: 5px;
+}
+
+/*Top middle menu*/
+.menuBar {
+	margin: 0;
+	padding: 0;
+}
+.horNavbar {
+	margin: 0;
+	padding: 0;
+}
+
+.horNavbar li {
+	display: inline-block;
+	margin: auto;
+	padding: 1em;
+	opacity: .6;
+}
+.horNavbar li:hover {
+	opacity: 1;
+}
+#adventure a {
+	font-family: 'Shadows Into Light', cursive;
+	text-transform: none;
+	font-size: 1.2em;
+}
+#adventure {
+	-ms-transform: skew(-10deg, -10deg); /* IE 9 */
+    -webkit-transform: skew(-10deg, -10deg); /* Safari */
+	transform: skew(-10deg, -10deg);
+	opacity: 1;
+}
+
+/*Left Buttom*/
+.buildTrip {
+	position: absolute;
+	right: 0;
+	margin: 2%;
+}
+.buildTrip a {
+	display: block;
+	background: #ffffff;
+	color: #000000;
+	line-height: 2em;
+	padding: 0.1em 2em;
+	border-radius: 50px;
+	letter-spacing: 3px;
+}
+
+/*The middle of Home page*/
+main {
+	display: block;
+	height: 50%;
+	text-align: center;		
+	color: #ffffff;
+	margin: 1%;
+}
+.myTitle {
+	margin-top: 10%;
+	margin-bottom: 0;
+	font-family: "Nothing You Could Do", cursive;
+	font-size: 3em;
+	line-height: 1.1em;
+	-ms-transform: skew(-20deg,-5deg); /* IE 9 */
+    -webkit-transform: skew(-20deg,-5deg); /* Safari */
+    transform: skew(-20deg,-5deg); /* Standard syntax */
+}
+.miniTitle {
+	margin-bottom: 10%;
+	letter-spacing: 3px;
+	margin-top: 3%;
+	font-size: 0.7em;
+	text-transform: uppercase;
+	font-family: 'Oswald', sans-serif;
+}
+
+/*The Footer of the home page */
+footer {
+	margin: 0;
+	padding: 1em 0;
+}
+.textDown, .pharagraf {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	line-height: 1.8em;
+	color: #ffffff;
+	margin: 0 5px;
+	padding: 0 2%;
+}
+.textDown {
+	font-size: 0.5em;
+	font-style: italic;
+	opacity: .8;	
+}
+.pharagraf {
+	font-size: 0.7em;
+	font-weight: bold;
+}
+footer ul {
+	margin: 0;
+	padding: 0;
+}
+footer li {
+	display: inline-block;
+	margin: 5px;
+	padding: 0;
+}
+#seeTrip {
+	padding-left: 2%;
+}
+#seeTrip a {
+	display: block;
+	background: #ffffff;
+	color: #000000;
+	padding: 0.1em 2em;
+	border-radius: 50px;
+	line-height: 2em;
+}
+#allTrips a {
+	text-decoration: underline;
+	line-height: 2em;
+}
+
+
+/*Secont Container -Adventure is everywhere*/
+.tripContainer {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+.headContainer {
+	display: block;
+	text-align: center;
+	height: 30%;
+	margin: 0;
+	padding: 2em 0;
+}
+.contTitle {
+	font-family: 'PT Sans Caption', sans-serif;
+	text-transform: uppercase;
+	color: #000000;
+	font-size: 1.5em;
+	letter-spacing: 6px;
+	opacity: .8;
+	margin: 0;
+}
+.subTitle {
+	font-family: 'Raleway', sans-serif;
+	text-transform: uppercase;
+	font-size: 0.6em;
+	font-style: italic;
+	font-weight: bold;
+	letter-spacing: 4px;
+	color: #dc1d1d;
+	margin: 0;
+	padding: 0.5em;
+}
+.blueButton {
+	padding: 1.2em;
+}
+.blueButton a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.5em;
+	font-weight: bold;
+	padding: 10px 20px;
+	background: #427e9a;
+	color: #ffffff;
+	border-radius: 50px;
+	letter-spacing: 5px;
+}
+.tripAdventure {
+	display: flex;
+	flex-wrap: wrap;
+	height: 70%;
+}
+.tripBox {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 25%;
+	height: 50%;
+	cursor: pointer;
+	position: relative;
+}
+.tripAdventure img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.tripAdventure a {
+	position: absolute;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.6em;
+	letter-spacing: 3px;
+	color: #ffffff;
+	font-weight: bold;
+	/*visibility: hidden;*/
+}
+/*.tripAdventure a:hover {
+	visibility: visible;
+}*/
+
+
+/*Third container - Magic in Madagascar*/
+.magicContainer {
+	margin: 0;
+	height: 100%;
+}
+.magicContainer .headContainer {
+	height: 20%;
+}
+.epicStory {
+	height: 80%;
+	margin: 1%;
+	padding: 0;
+	background: #aa61f3 url(../img/magicBackground.JPG) no-repeat;
+	background-size: 100% 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.leftArrow, .rightArrow {
+	border: 1px solid #ffffff;
+	color: #ffffff;
+	padding: 0.5em;
+	font-size: 2em;
+	cursor: pointer;	
+}
+.leftArrow a, .rightArrow a {
+	color: #ffffff;
+}
+.middleContent {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.magic {
+	font-family: 'Oswald', sans-serif;
+	font-size: 1.5em;
+	color: #ffffff;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	line-height: 2.5em;
+	margin: 0;
+}
+/*linia de dupa titlu*/
+.magic:after {
+	border-top: 2px solid #ffffff;
+	width: 50px;
+	height: 1px;
+	display: block;
+	content: "";
+	margin: auto; 
+}
+.description {
+	width: 45%;
+	text-align: center;
+	color: #ffffff;
+	font-size: 0.9em;
+	font-family: 'Raleway', sans-serif;
+	line-height: 2em;
+}
+.blackButton{
+	margin: 5px;
+}
+.blackButton a {
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: 'Raleway', sans-serif;
+	font-size: 0.5em;
+	font-weight: bold;
+	padding: 10px 20px;
+	background: #000000;
+	color: #ffffff;
+	border-radius: 50px;
+	letter-spacing: 5px;
+	font-style: italic; 
+}
+
+/*Fourth Container - Sparks of inspiration*/
+.blogStory {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0 20px;
+}
+.article {
+	width: 35%;
+	height: 28%;
+	margin: 1%;
+	display: flex;
+	flex-direction: row;
+}
+.imgArticle {
+	width: 30%;
+	height: 30%;
+}
+.imgArticle a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.imgArticle img {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+.articleDetailes {
+	/*padding: 0 10px;*/
+	width: 70%
+}
+.articleDetailes a {
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.gear {
+	font-family: 'Raleway', sans-serif;
+    font-size: 0.4em;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 3px;
+    color: #dc1d1d;
+    margin: 0;
+    padding: 2px 5px;
+}
+.articleTitle {
+	font-family: 'PT Sans Caption', sans-serif;
+	color: #000000;
+	font-weight: bold;
+	font-size: 0.8em;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 2px 5px;
+}
+.note {
+	font-family: 'PT Sans Caption', sans-serif;
+	text-transform: uppercase;
+	color: #bcbfc1;
+	font-size: 0.5em;
+	letter-spacing: 2px;
+	margin: 0;
+	padding: 2px 5px;
+}
+
+/*Last Container - Footer*/
+.footerContainer {
+	margin: 0;
+/*	width: 100%;
+	height: 50%;*/
+}
+.menuContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: #000000;
+	color: #ffffff;
+	opacity: .9;
+	height: 80%;
+	padding: 1% 10%;
+}
+.menuContainer a, .moreMenu a, .subscribe p {
+	font-family: 'PT Sans Caption', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #ffffff;
+	font-size: 0.5em;
+	line-height: 2.5em;
+	letter-spacing: 5px;
+	padding: 3px;
+}
+.menuFooter {
+	/*border: 1px solid black;*/
+}
+.moreMenu ul{
+	padding: 0;
+}
+.subscribe {
+	padding: 0 10%;
+}
+.subscribe p {
+	padding-top: 10px;
+}
+input {
+	/*font-family: 'Quintessential', cursive;*/
+	font-family: 'Open Sans', sans-serif;
+	background: black;
+	border: 0;
+	border-bottom: 1px solid #323232; 
+	color: red;
+	padding: 0 10px;
+
+}
+input::-webkit-input-placeholder {
+   color: red;
+}
+
+input:-moz-placeholder { /* Firefox 18- */
+   color: red;  
+}
+
+input::-moz-placeholder {  /* Firefox 19+ */
+   color: red;  
+}
+
+input:-ms-input-placeholder {  
+   color: red;  
+}
+input:focus {
+	outline: none;
+}
+form {
+	line-height: 20px;
+}
+button {
+	margin: 10px;
+	text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-size: 0.3em;
+    font-weight: bold;
+    padding: 5px 10px;
+    background: #323232;
+    color: #ffffff;
+    border-radius: 50px;
+    letter-spacing: 4px;
+    font-style: italic;
+    border: none;
+}
+.privacy {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	background: #000000;
+	padding: 1% 10%;
+}
+.privacy a, .privacy p {
+	font-family: 'PT Sans Caption', sans-serif;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #313131;
+	font-size: 0.5em;
+	line-height: 2.5em;
+	letter-spacing: 3px;
+	padding: 3px;
+}
+.termsPrivacy a:first-child {
+	border-right: 1px solid #313131;
+	padding-right: 20px;
+}
+.termsPrivacy a:last-child {
+	padding-left: 20px;
+}
+.termsPrivacy {
+	padding: 10px;
+}
+.copyright a {
+	font-size: 1em;
+}
